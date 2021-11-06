@@ -1,0 +1,28 @@
+name:                fixp
+version:             0.1.0.0
+github:              "rri/fixp"
+license:             Apache-2.0
+author:              "Ramnath R Iyer"
+copyright:           "2021 Ramnath R Iyer"
+description:         Refer to README.md on GitHub at <https://github.com/rri/fixp#readme>
+
+extra-source-files:
+- README.md
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+    source-dirs: src
+
+tests:
+    spec:
+        main:                Spec.hs
+        source-dirs:         tst
+        ghc-options:
+        - -threaded
+        - -rtsopts
+        - -with-rtsopts=-N
+        dependencies:
+        - fixp
+        - hspec

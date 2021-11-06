@@ -1,0 +1,4 @@
+fixp.cabal
+stack.yaml.lock
+.stack-work/
+*~
